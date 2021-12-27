@@ -1,10 +1,12 @@
 {
   "name": "flat",
   "version": "6.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "bin": "cli.js",
   "scripts": {
-    "test": "npx mocha -u tdd -r ts-node/register index.spec.ts"
+    "test": "npx mocha -u tdd -r ts-node/register index.spec.ts",
+    "build": "tsc"
   },
   "license": "BSD-3-Clause",
   "description": "Take a nested Javascript object and flatten it, or unflatten an object with delimited keys",
