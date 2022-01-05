@@ -29,8 +29,6 @@ function keyIdentity(key: string) {
   return key;
 }
 
-// function flatten(target: object, opts: FlattenOptions = {}): object {}
-
 function flatten(target: anyObject, opts: FlattenOptions = {}): anyObject {
   const delimiter = opts.delimiter || ".";
   const maxDepth = opts.maxDepth || 0;
